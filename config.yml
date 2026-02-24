@@ -61,8 +61,8 @@ params:
             My research lies at the intersection of optimization, variational analysis, and dynamical systems. I study constrained variational inequalities and monotone inclusion problems in Hilbert spaces.
             </p><br>
             <p>
-My work develops dynamical systems incorporating penalization and Tikhonov regularization to ensure strong convergence toward least-norm solutions,
-highlighting multiscale features and connections between regularization, penalty methods, and splitting techniques. Applications include constrained optimization and min–max problems in optimization and optimal control.
+            My work develops dynamical systems incorporating penalization and Tikhonov regularization to ensure strong convergence toward least-norm solutions,
+            highlighting multiscale features and connections between regularization, penalty methods, and splitting techniques. Applications include constrained optimization and min–max problems in optimization and optimal control.
             </p>
           imageUrl: "siqiweb.jpeg"
           imageWidth: 160
