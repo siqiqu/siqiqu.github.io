@@ -58,7 +58,14 @@ params:
             Hello! I am a 4th year Ph.D. student in Mathematics pursuing a double degree at the University of Mannheim and the University of Groningen.
             </p><br>
             <p>
-            My research is focus on the convex optimization.
+            My research lies at the intersection of optimization, variational analysis, and dynamical systems. I focus on the study of constrained variational inequalities and monotone inclusion problems in possibly infinite-dimensional Hilbert spaces.
+             </p><br>
+             <p>
+             A central theme of my work is the design and analysis of continuous-time dynamical systems that incorporate penalization and Tikhonov regularization mechanisms to ensure strong convergence toward least-norm solutions. 
+             These dynamics often exhibit multi-scale features and provide a unifying framework connecting regularization methods, penalty techniques, and splitting approaches.
+            </p><br>
+            <p>
+             Beyond theoretical convergence analysis, I am also interested in the application of these methods to constrained optimization and min–max problems arising in optimization and optimal control.
             </p>
           imageUrl: "siqiweb.jpeg"
           imageWidth: 160
