@@ -56,6 +56,7 @@ params:
           enabled: true
           title: Siqi Qu
           subtitle: "I am a PhD student"
+           imageUrl: "picture.jpeg"
           imageWidth: 160
           imageHeight: 160
           buttons:
