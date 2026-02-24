@@ -76,8 +76,7 @@ params:
           #    url: tags/
            # - name: Archive
           #    url: archive/
-          #  - name: Blog
-          #   url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+
 
     socialIcons:
       #  - name: CV
