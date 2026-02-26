@@ -58,7 +58,7 @@
     {{- end }}
 
     <!-- News 紧跟按钮 -->
-    <div class="profile-news" style="margin-top:10px;">
+    <div class="profile-news" style="margin-top:30px;">
       <h2>News</h2>
       {{ $news := where site.RegularPages "Type" "news" }}
       {{ $news = sort $news "Date" "desc" }}
