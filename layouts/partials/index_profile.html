@@ -57,19 +57,6 @@
     {{- end}}
 </div>
 
-<section style="margin-top:2px;">
-  <h2>News</h2>
-
-  {{ range first 3 (sort (where .Site.RegularPages "Section" "news") "Date" "desc") }}
-    <div style="margin-bottom:8px;">
-      {{ .Date.Format "2006-01-02" }} —
-      <a href="{{ .RelPermalink }}">
-        {{ .Title }}
-      </a>
-    </div>
-  {{ end }}
-
-</section>
 {{ $news := where site.RegularPages "Section" "news" | first 3 }}
 
 <h2>News</h2>
