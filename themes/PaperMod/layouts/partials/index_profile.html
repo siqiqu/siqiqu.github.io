@@ -56,3 +56,17 @@
     </div>
     {{- end}}
 </div>
+
+<section style="margin-top:40px;">
+  <h2>News</h2>
+
+  {{ range first 3 (sort (where .Site.RegularPages "Section" "news") "Date" "desc") }}
+    <div style="margin-bottom:8px;">
+      {{ .Date.Format "2006-01-02" }} —
+      <a href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
+    </div>
+  {{ end }}
+
+</section>
