@@ -1,52 +1,21 @@
 ---
-title: "Your Inner Hedgehog" 
-date: 2021-04-06
-tags: ["social psychology","inner hedgehog","academia","experimental psychology","invasive thoughts"]
-author: ["Hilda Schreiber-Ziegler", "Moritz-Maria von Igelfeld"]
-description: "This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021." 
-summary: "Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure." 
+title: "Asymptotic behaviour of coupled random dynamical systems with multiscale aspects" 
+date: 2026-01-01
+tags: ["Constrained Variational Inequalities","Dynamical Systems","Penalty Dynamics"]
+author: ["D. Russell Luke, Johannes-Carl Schnebel1, Mathias Staudigl, Siqi Qu, Juan Peypouquet"]
+description:
+summary:
 cover:
-    image: "paper3.png"
-    alt: "Vizualisation of an inner hedgehog"
+
     relative: true
 editPost:
-    URL: "https://github.com/pmichaillat/hugo-website"
-    Text: "Journal of Socio-Experimental Psychology"
+    URL: "https://arxiv.org/abs/2503.03902"
+    Text: "DOI: 10.48550/arXiv.2601.15411"
 
 ---
-
 ---
-
-##### Download
-
-+ [Paper](paper3.pdf)
-+ [Raw data](https://github.com/pmichaillat/michez-rule)
-
----
-
 ##### Abstract
 
-Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure. Mauris tincidunt quam a libero consequat, nec pharetra nunc tristique. Pellentesque eget ipsum ut dui laoreet congue ut nec nulla. Nulla facilisi. Sed consequat, odio ac aliquet tempor, turpis augue auctor mauris, at malesuada sem dolor eget libero. Nullam iaculis malesuada risus, id fringilla quam sagittis ac. Fusce congue vel ex et facilisis. Integer volutpat eros ut urna efficitur, id efficitur sapien pharetra.
+We examine a class of stochastic differential inclusions involving multiscale effects designed to solve a class of generalized variational inequalities. This class of problems contains constrained convex non- smooth optimization problems, constrained saddle-point problems and various equilibrium problems in economics and engineering. In order to respect constraints we adopt a penalty approach, introducing an explicit time-dependency into the evolution system. The resulting dynamics are described in terms of a non-autonomous stochastic evolution equation governed by maximally monotone operators in the drift and perturbed by a Brownian motion. We study the asymptotic behavior, as well as finite time convergence rates in terms of gap functions. The condition we use to prove convergence involves a Legendre transform of the function describing the set C, a condition first used by Attouch and Czarnecki [4] in the context of deterministic evolution equations. We also establish a large deviations principle showing that individual trajectories exhibit exponential concentration around the solution set. Finally we show how our continuous-time approach relates to penalty-regulated algorithms of forward-backward type after performing a suitable Euler-Maruyama discretisation.
 
 ---
-
-##### Citation
-
-Schreiber-Ziegler, Hilda, and Moritz-Maria von Igelfeld. 2021. "Your Inner Hedgehog." *Journal of Socio-Experimental Psychology* 131 (2): 1299–1302.
-
-```latex
-@article{SZI21,
-author = {Hilda Schreiber-Ziegler and Moritz-Maria von Igelfeld},
-year = {2021},
-title ={Your Inner Hedgehog},
-journal = {Journal of Socio-Experimental Psychology},
-volume = {131},
-number = {2},
-pages = {1299--1302}}
-```
-
----
-
-##### Related material
-
-+ [Nontechnical summary](https://www.alexandermccallsmith.com/book/your-inner-hedgehog)
