@@ -55,7 +55,7 @@ params:
   comments: false
   math: true
 
-  # ✅ 主题相关配置（必须在 params 里面）
+  # 主题相关配置（必须在 params 里面）
   assets:
     disableScrollBarStyle: true
     customCSS:
