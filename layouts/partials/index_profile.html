@@ -57,12 +57,12 @@
     {{- end}}
 </div>
 
-{{ $news := where site.RegularPages "Section" "news" | first 3 }}
+#{{ $news := where site.RegularPages "Section" "news" | first 3 }}
 
-<h2>News</h2>
-<ul>
-{{ range $news }}
-  <li>{{ .Date.Format "2006-01-02" }} - {{ .Title }}</li>
-{{ end }}
-</ul>
+#<h2>News</h2>
+#<ul>
+#{{ range $news }}
+ # <li>{{ .Date.Format "2006-01-02" }} - {{ .Title }}</li>
+#{{ end }}
+#</ul>
 
