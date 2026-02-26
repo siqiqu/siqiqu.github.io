@@ -3,7 +3,6 @@ title: "Tikhonov Regularized Exterior Penalty Dynamics for Constrained Variation
 date: 2022-01-01
 tags: ["Constrained Variational Inequalities","Dynamical Systems","Penalty Dynamics","Tikhonov regularization"]
 author: ["Juan Peypouquet, Siqi Qu, Mathias Staudigl"]
-description: "This paper reviews unusual uses for olive oil throughout the Mediterranean world. Published in the Journal of Oleic Science, 2013." 
 summary: "This paper reviews unusual uses for olive oil throughout the Mediterranean world. It highlights in particular the challengs arising from excessive or unorthodox consumption of olive oil." 
 cover:
 
@@ -13,7 +12,14 @@ editPost:
     Text: "IEEE Control Systems Letters"
 
 ---
+---
 
+##### Read
+
+
++ [Code and data]([https://github.com/pmichaillat/wunk-model](https://ieeexplore.ieee.org/document/10530399))
+
+---
 ---
 
 ##### Abstract
