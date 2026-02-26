@@ -1,5 +1,44 @@
 {{ define "main" }}
 
-<h1>LIST TEMPLATE WORKING</h1>
+<h1>{{ .Title }}</h1>
+
+<div class="timeline">
+
+{{/* 读取 data 下面所有子页面 */}}
+{{ $pages := sort .Pages "Date" "desc" }}
+
+{{ range $pages }}
+
+<div class="timeline-item">
+
+  <div class="timeline-date">
+    {{ if .Date }}
+      {{ .Date.Format "Jan 2006" }}
+    {{ end }}
+  </div>
+
+  <div class="timeline-content">
+
+    <h3>
+      <a href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
+    </h3>
+
+    {{ with .Params.topic }}
+      <p><strong>Topic:</strong> {{ . }}</p>
+    {{ end }}
+
+    {{ with .Params.speaker }}
+      <p><strong>Speaker:</strong> {{ . }}</p>
+    {{ end }}
+
+  </div>
+
+</div>
+
+{{ end }}
+
+</div>
 
 {{ end }}
