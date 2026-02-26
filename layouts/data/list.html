@@ -1,10 +1,45 @@
 {{ define "main" }}
 
+<-- 强制插入样式 -->
+<style>
+.timeline {
+  border-left: 3px solid #cfcfcf;
+  padding-left: 40px;
+  margin-top: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -47px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background: #333;
+  border-radius: 50%;
+}
+
+.timeline-date {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.timeline-content h3 {
+  margin: 5px 0;
+}
+</style>
+
 <h1>{{ .Title }}</h1>
 
 <div class="timeline">
 
-{{/* 读取 data 下面所有子页面 */}}
 {{ $pages := sort .Pages "Date" "desc" }}
 
 {{ range $pages }}
@@ -12,13 +47,10 @@
 <div class="timeline-item">
 
   <div class="timeline-date">
-    {{ if .Date }}
-      {{ .Date.Format "Jan 2006" }}
-    {{ end }}
+    {{ .Date.Format "Jan 2006" }}
   </div>
 
   <div class="timeline-content">
-
     <h3>
       <a href="{{ .RelPermalink }}">
         {{ .Title }}
