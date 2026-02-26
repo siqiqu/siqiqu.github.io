@@ -79,4 +79,9 @@
 
 </section>
 
+<h2>Debug</h2>
+{{ range .Site.RegularPages }}
+  <p>Section: {{ .Section }} | Title: {{ .Title }}</p>
+{{ end }}
+
 
