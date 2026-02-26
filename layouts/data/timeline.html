@@ -1,23 +1,35 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
-  onload="renderMathInElement(document.body);"></script>
+{{ define "main" }}
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-          delimiters: [
-            {left: '$$', right: '$$', display: true},
-            {left: '$', right: '$', display: false},
-            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
-            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
-            {left: "\\begin{align}", right: "\\end{align}", display: true},
-            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
-            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
-            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
-            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
-          ],
-          throwOnError : false
-        });
-    });
-</script>
+<h1>{{ .Title }}</h1>
+
+<div class="timeline">
+
+{{ $pages := where .Site.RegularPages "Section" "data" }}
+{{ $pages := sort $pages "Date" "desc" }}
+
+{{ range $pages }}
+
+<div class="timeline-item">
+  <div class="timeline-date">
+    {{ .Date.Format "2006" }}
+  </div>
+
+  <div class="timeline-content">
+    <h3>{{ .Title }}</h3>
+
+    {{ with .Params.topic }}
+      <p><strong>Topic:</strong> {{ . }}</p>
+    {{ end }}
+
+    {{ with .Params.speaker }}
+      <p><strong>Speaker:</strong> {{ . }}</p>
+    {{ end }}
+
+  </div>
+</div>
+
+{{ end }}
+
+</div>
+
+{{ end }}
