@@ -112,6 +112,8 @@ params:
 
     assets:
         disableScrollBarStyle: true
+        customCSS:
+    - css/custom.css
     cover:
         hiddenInList: false
         hiddenInSingle: true
