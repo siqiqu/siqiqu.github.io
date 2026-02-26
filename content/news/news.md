@@ -1,5 +1,5 @@
 ---
 title: "News"
-date: 1-3-2026
+date: 2026-3-1
 draft: false
 ---
