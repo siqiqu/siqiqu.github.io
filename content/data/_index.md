@@ -1,6 +1,4 @@
 ---
-title: "Workshop"
+title: "Conferences & Workshop"
 date: 2022-05-01
-topic: "XXX"
-speaker: "XXX"
 ---
