@@ -33,6 +33,12 @@
 .timeline-content h3 {
   margin: 5px 0;
 }
+
+  .timeline-location {
+  font-style: italic;
+  color: #666;
+  margin-top: 3px;
+}
 </style>
 
 <h1>{{ .Title }}</h1>
@@ -62,6 +68,10 @@
 
     {{ with .Params.speaker }}
       <p><strong>Speaker:</strong> {{ . }}</p>
+    {{ end }}
+
+    {{ with .Params.location }}
+      <p class="timeline-location">{{ . }}</p>
     {{ end }}
 
   </div>
