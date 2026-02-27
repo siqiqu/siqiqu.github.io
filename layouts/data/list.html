@@ -1,4 +1,4 @@
-{{ define "main" }}
+{{- define "main" }}
 
 <style>
 .timeline {
@@ -34,7 +34,7 @@
   margin: 5px 0;
 }
 
-  .timeline-location {
+.timeline-location {
   font-style: italic;
   color: #666;
   margin-top: 3px;
@@ -45,41 +45,44 @@
 
 <div class="timeline">
 
-{{ $pages := sort .Pages "Date" "desc" }}
+{{- $pages := sort .Pages "Date" "desc" }}
 
-{{ range $pages }}
+{{- range $pages }}
 
-<div class="timeline-item">
+  <div class="timeline-item">
 
-  <div class="timeline-date">
-    {{ .Date.Format "Jan 2006" }}
+    <div class="timeline-date">
+      {{- if .Date }}
+        {{ .Date.Format "Jan 2006" }}
+      {{- end }}
+    </div>
+
+    <div class="timeline-content">
+
+      <h3>
+        <a href="{{ .RelPermalink }}">
+          {{ .Title }}
+        </a>
+      </h3>
+
+      {{- with .Params.topic }}
+        <p>{{ . }}</p>
+      {{- end }}
+
+      {{- with .Params.speaker }}
+        <p>{{ . }}</p>
+      {{- end }}
+
+      {{- with .Params.location }}
+        <p class="timeline-location">{{ . }}</p>
+      {{- end }}
+
+    </div>
+
   </div>
 
-  <div class="timeline-content">
-    <h3>
-      <a href="{{ .RelPermalink }}">
-        {{ .Title }}
-      </a>
-    </h3>
-
-    {{ with .Params.topic }}
-      <p><strong>Topic:</strong> {{ . }}</p>
-    {{ end }}
-
-    {{ with .Params.speaker }}
-      <p><strong>Speaker:</strong> {{ . }}</p>
-    {{ end }}
-
-    {{ with .Params.location }}
-      <p class="timeline-location">{{ . }}</p>
-    {{ end }}
-
-  </div>
+{{- end }}
 
 </div>
 
-{{ end }}
-
-</div>
-
-{{ end }}
+{{- end }}
