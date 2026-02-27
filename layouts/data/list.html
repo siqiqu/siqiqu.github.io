@@ -57,12 +57,8 @@
       </a>
     </h3>
 
-    {{ with .Params.topic }}
-      <p><strong>Topic:</strong> {{ . }}</p>
-    {{ end }}
-
-    {{ with .Params.speaker }}
-      <p><strong>Speaker:</strong> {{ . }}</p>
+    {{ with .Params.location }}
+      <p>{{ . }}</p>
     {{ end }}
 
   </div>
