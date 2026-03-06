@@ -96,6 +96,8 @@ params:
   socialIcons:
     - name: Email
       url: mailto:qu.siqi@uni-mannheim.de
+    - name: Email
+      url: https://scholar.google.com/citations?hl=en&user=UzQe4XkAAAAJ&view_op=list_works&authuser=1&sortby=pubdate
     - name: ORCID
       url: https://orcid.org/0000-0002-0313-4851
     - name: LinkedIn
