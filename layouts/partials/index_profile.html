@@ -67,9 +67,12 @@
       {{ if $news }}
         <ul>
           {{ range $news }}
-           <li>
-  <strong>{{ .Date.Format "Jan 2006" }}</strong>
-  <span style="margin-left:20px;">
+           <li style="display:flex; gap:20px;">
+  <strong style="white-space:nowrap;">
+    {{ .Date.Format "Jan 2006" }}
+  </strong>
+
+  <span style="flex:1;">
     {{ .Title | safeHTML }}
   </span>
 </li>
