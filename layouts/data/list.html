@@ -50,12 +50,11 @@
     {{ .Date.Format "Jan 2006" }}
   </div>
 
-  <div class="timeline-content">
-    <h3>
-      <a href="{{ .RelPermalink }}">
-        {{ .Title }}
-      </a>
-    </h3>
+ <div class="timeline-content">
+  <h3>
+    {{ .Title | safeHTML }}
+  </h3>
+</div>
 
     {{ with .Params.location }}
       <p>{{ . }}</p>
