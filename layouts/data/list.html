@@ -1,11 +1,12 @@
 {{ define "main" }}
 
-<!-- 🔥 直接强制插入样式 -->
+<!-- 直接强制插入样式 -->
 <style>
 .timeline {
-  border-left: 3px solid #cfcfcf;
-  padding-left: 40px;
+  position: relative;
   margin-top: 20px;
+  padding-left: 40px;
+  border-left: 3px solid #cfcfcf;
 }
 
 .timeline-item {
@@ -13,10 +14,11 @@
   margin-bottom: 50px;
 }
 
+/* 小点 */
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: -47px;
+  left: -11px;        /* 精准贴合 border-left */
   top: 6px;
   width: 14px;
   height: 14px;
@@ -24,19 +26,14 @@
   border-radius: 50%;
 }
 
+/* 时间 */
 .timeline-date {
   font-weight: bold;
-  font-size: 1rem;
-  color: #444;
-  margin-bottom: 5px;
-}
-  
-  .timeline-title {
-  position: relative;
-  padding-left: 20px;
+  margin-bottom: 6px;
+  white-space: nowrap;
 }
 
-
+/* 标题 */
 .timeline-content h3 {
   margin: 5px 0;
 }
