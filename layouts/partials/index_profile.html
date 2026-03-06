@@ -67,7 +67,7 @@
       {{ if $news }}
         <ul>
           {{ range $news }}
-            <li>{{ .Date.Format "2006-01" }} — <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            <li>{{ .Date.Format "2006-01" }} — <a href="{{ .RelPermalink }}">{{ .Params.title | safeHTML }}</a></li>
           {{ end }}
         </ul>
       {{ else }}
