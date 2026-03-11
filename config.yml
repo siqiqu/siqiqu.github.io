@@ -96,6 +96,8 @@ params:
   socialIcons:
     - name: Email
       url: mailto:qu.siqi@uni-mannheim.de
+    - name: CV
+      url: CVSiqiQu.pdf
     - name: Google Scholar
       url: https://scholar.google.com/citations?hl=en&user=UzQe4XkAAAAJ&view_op=list_works&authuser=1&sortby=pubdate
     - name: ORCID
