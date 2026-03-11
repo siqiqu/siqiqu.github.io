@@ -58,8 +58,8 @@
     {{- end }}
 
     <!-- News 紧跟按钮 -->
-    <div class="profile-news" style="margin-top:30px;">
-      <h2>News</h2>
+    <div class="profile-news" style="margin-top:20px;">
+      <h2 style="margin-top:20px; margin-bottom:8px;">News</h2>
       {{ $news := where site.RegularPages "Type" "news" }}
       {{ $news = sort $news "Date" "desc" }}
       {{ $news = first 3 $news }}
@@ -67,7 +67,7 @@
       {{ if $news }}
         <ul>
           {{ range $news }}
-           <li style="display:flex; gap:10px; margin-bottom:8px;">
+           <li style="display:flex; gap:8px; margin-bottom:8px;">
   <strong style="white-space:nowrap;">
    • {{ .Date.Format "Jan 2006" }}
   </strong>
