@@ -3,6 +3,7 @@ title: "Asymptotic behaviour of coupled random dynamical systems with multiscale
 date: 2026-01-01
 tags: ["Constrained Variational Inequalities","Dynamical Systems","Penalty Dynamics"]
 author: ["D. Russell Luke, Johannes-Carl Schnebel, Mathias Staudigl, Siqi Qu, Juan Peypouquet"]
+journal: "arXiv.2601.15411"
 description:
 summary:
 cover:
