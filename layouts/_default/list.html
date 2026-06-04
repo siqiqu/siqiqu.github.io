@@ -89,6 +89,12 @@
   </div>
   {{ end }}
 
+  {{ with .Params.journal }}
+  <div class="post-journal">
+    <em>{{ . }}</em>
+  </div>
+  {{ end }}
+
   <!-- 年份：单独一行 -->
   {{ with .Date }}
   <div class="post-year">
