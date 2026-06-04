@@ -9,7 +9,7 @@ cover:
 
     relative: true
 editPost:
-    URL: "https://arxiv.org/abs/2503.03902"
+    URL: "https://arxiv.org/abs/2601.15411"
     Text: "DOI: 10.48550/arXiv.2601.15411"
 
 ---
