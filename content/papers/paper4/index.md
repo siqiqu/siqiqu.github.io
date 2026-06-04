@@ -3,6 +3,7 @@ title: "On the number of concentrating solutions of a fractional Schrödinger–
 date: 2022-03-01
 tags: ["Nonlocal operator", "Schrödinger–Poisson system", "Ground state solution", "Critical Sobolev exponent"]
 author: ["Siqi Qu, Xiaoming He"]
+journal: "Analysis and Mathematical Physics"
 description:
 summary:
 cover:
