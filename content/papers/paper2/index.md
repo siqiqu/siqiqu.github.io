@@ -3,6 +3,7 @@ title: "Asymptotic Behavior of Penalty Dynamics for Constrained Variational Ineq
 date: 2026-02-01
 tags: ["Constrained Variational Inequalities","Dynamical Systems","Penalty Dynamics","Tikhonov regularization"]
 author: ["Juan Peypouquet, Siqi Qu, Mathias Staudigl"]
+journal: "Applied Mathematics & Optimization"
 description:
 summary:
 cover:
