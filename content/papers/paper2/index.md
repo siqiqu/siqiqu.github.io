@@ -1,5 +1,5 @@
 ---
-title: "Asymptotic Behavior of Penalty Dynamics for Constrained Variational Inequalities: Asymptotic Behavior of Penalty Dynamics" 
+title: "Asymptotic Behavior of Penalty Dynamics for Constrained Variational Inequalities" 
 date: 2026-02-01
 tags: ["Constrained Variational Inequalities","Dynamical Systems","Penalty Dynamics","Tikhonov regularization"]
 author: ["Juan Peypouquet, Siqi Qu, Mathias Staudigl"]
