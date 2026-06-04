@@ -3,6 +3,7 @@ title: "Multiplicity of high energy solutions for fractional Schrodinger-Poisson
 date: 2022-07-01
 tags: ["Fractional Schrodinger-Poisson system", "high energy solution", "critical Sobolev exponent"]
 author: ["Siqi Qu, Xiaoming He"]
+journal: "Electronic Journal of Differential Equations"
 description:
 summary:
 cover:
